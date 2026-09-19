@@ -11,7 +11,7 @@ public class Feedback {
     private Long id;
 
     @Column(nullable = false)
-    private String authorName;
+    private Integer rating;
 
     @Column(nullable = false, length = 1000)
     private String comment;
@@ -27,12 +27,12 @@ public class Feedback {
         return id;
     }
 
-    public String getAuthorName() {
-        return authorName;
+    public Integer getRating() {
+        return rating;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
+    public void setRating(Integer rating) {
+        this.rating = rating;
     }
 
     public String getComment() {

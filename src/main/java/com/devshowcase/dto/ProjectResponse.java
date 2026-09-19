@@ -9,6 +9,8 @@ public record ProjectResponse(
     String repositoryUrl,
     String demoUrl,
     Long profileId,
-    Set<TechnologyResponse> technologies
+    Set<TechnologyResponse> technologies,
+    Double averageRating,
+    Integer upvotes
 ) {
 }
